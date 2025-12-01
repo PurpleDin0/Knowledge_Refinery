@@ -86,7 +86,7 @@ function App() {
             <div className="space-y-8 relative">
                 {/* Background Image for Large Screens */}
                 <div 
-                  className="fixed right-0 top-16 bottom-0 w-[400px] bg-cover bg-center opacity-10 pointer-events-none hidden 2xl:block"
+                  className="fixed right-0 top-16 bottom-0 w-[400px] bg-cover bg-top opacity-20 pointer-events-none hidden 2xl:block"
                   style={{ 
                       // Assumes image is in public folder and served at root
                       backgroundImage: 'url("/AI_Knowledge_Refinery.jpg")', 
