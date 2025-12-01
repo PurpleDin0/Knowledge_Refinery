@@ -86,7 +86,7 @@ function App() {
             <div className="space-y-8 relative">
                 {/* Background Image for Large Screens */}
                 <div 
-                  className="fixed right-0 top-16 bottom-0 w-[400px] bg-cover bg-right-top opacity-50 pointer-events-none hidden 2xl:block"
+                  className="fixed right-0 top-16 bottom-0 w-[400px] bg-cover bg-right-top opacity-35 pointer-events-none hidden 2xl:block"
                   style={{ 
                       // Assumes image is in public folder and served at root
                       backgroundImage: 'url("/AI_Knowledge_Refinery.jpg")', 
@@ -94,7 +94,14 @@ function App() {
                       WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)' 
                   }}
                 ></div>
-
+                <div 
+                  className="fixed left-0 top-16 bottom-0 w-[400px] bg-cover bg-left-top opacity-35 pointer-events-none hidden 2xl:block"
+                  style={{ 
+                      backgroundImage: 'url("/AI_Knowledge_Refinery.jpg")', 
+                      maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)', 
+                      WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)' 
+                  }}
+                ></div>
                 <div className="text-center mb-10 relative">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">
                         Refining Knowledge
